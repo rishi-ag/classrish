@@ -1,0 +1,11 @@
+Package: classrish
+Title: Functions for reproducing analysis of classification
+Version: 0.0.0.9000
+Authors@R: person("Rish", "Agnihotri", email = "rishabh.agnihotri@gmail.com", role = c("aut", "cre"))
+Description: Functions for reproducing analysis of classification
+Depends:
+    R (>= 3.2.4)
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+LazyData: true
+RoxygenNote: 5.0.1
+Imports: doParallel, foreach, adabag, class, iterators, parallel
