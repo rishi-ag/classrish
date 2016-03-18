@@ -9,3 +9,6 @@ License: GNU AFFERO GENERAL PUBLIC LICENSE
 LazyData: true
 RoxygenNote: 5.0.1
 Imports: doParallel, foreach, adabag, class, iterators, parallel
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
