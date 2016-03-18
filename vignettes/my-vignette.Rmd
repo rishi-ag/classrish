@@ -15,6 +15,8 @@ library(classrish)
 library(ggplot2)
 library(randomForest)
 #devtools::install_github("rishi1226/classrish")
+library(classrish)
+
 ```
 
 This Vignette closely follows the process provided in the competition.
@@ -70,6 +72,7 @@ data4 <- classrish::PrepareData(path = path, mode = 1, sample = TRUE, size = 50)
 mfinal.seq <- seq(20, 30, 2)
 bagging.result <- classrish::Adabag(data1, mfinal.seq)
 
-
+(bagging.result$error)
+(ggplot2::ggplot( bagging.result$error, aes(x = iter, y = error)) + geom_line() + geom_point())
 ```
 
